@@ -22,7 +22,7 @@ public class GuessRandomNumber {
             } else if (guess > randomNumber) {
                 System.out.println("สูงไป! ลองใหม่อีกครั้ง.");
             } else {
-                System.out.println("ยินดีด้วย! คุณเดาหมายเลขถูกต้องแล้ว!");
+                System.out.println("ยินดีด้วย! คุณเดาหมายเลขถูกต้องแล้ว! \nจำนวนครั้งที่คุณเดาคือ: " + attempts);
             }
         }
 
