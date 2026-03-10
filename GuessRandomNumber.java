@@ -8,6 +8,7 @@ public class GuessRandomNumber {
         int randomNumber = random.nextInt(100) + 1;
         int attempts = 0;
         int guess = 0;
+        int Score = 100;
 
         System.out.println("ยินดีต้อนรับสู่เกมเดาหมายเลข!");
         System.out.println("ฉันได้เลือกหมายเลขสุ่มระหว่าง 1 ถึง 100 คุณสามารถเดาได้หรือไม่?");
@@ -22,7 +23,11 @@ public class GuessRandomNumber {
             } else if (guess > randomNumber) {
                 System.out.println("สูงไป! ลองใหม่อีกครั้ง.");
             } else {
+                System.out.println("-------------------------------");
                 System.out.println("ยินดีด้วย! คุณเดาหมายเลขถูกต้องแล้ว! \nจำนวนครั้งที่คุณเดาคือ: " + attempts);
+                Score -= attempts;
+                System.out.println("คะแนนของคุณคือ: " + Score);
+                System.out.println("-------------------------------");
             }
         }
 
